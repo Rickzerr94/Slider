@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+    color: black;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+input [type='button'], input [type='reset'], button {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 527px;
+    margin: 100px auto;
+}
+
+form {
+    background: aqua;
+    border-radius: 12px;
+    padding: 20px;
+}
+form h2{
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /*background-clip: text;*/
+    text-fill-color: transparent;
+}
+
+.input {
+    display: block;
+    width: 100%;
+    line-height: 26px;
+    border-radius: 8px;
+    padding: 11px 10px 10px;
+    margin-bottom: 20px;
+    border: 2px solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.input:focus {
+    border-color: #F0145A;
+}
+
+.input::placeholder {
+    font-family: 'TT Norms';
+    font-size: 18px;
+    line-height: 26px;
+    color: #B3B3BA;
+}
+
+form textarea {
+    resize: none;
+    height: 180px;
+}
+
+form h3 {
+    font-family: 'TT Norms';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #B3B3BA;
+    margin-bottom: 10px;
+}
+
+.btn {
+    padding: 16px 24px 17px;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #24A3FF;
+    box-shadow: 0px 0px 20px rgba(36, 163, 255, 0.5);
+    border-radius: 12px;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background: #0085FF;
+    box-shadow: 0px 0px 30px rgba(36, 163, 255, 0.5);
+}
+
+.btn:active {
+    background: #006CCF;
+}
+
+form .btn {
+    max-width: 250px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.my-flex-container{
+    /*display: flex;*/
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.my-flex-block {
+    flex-basis: 300px;
+    margin: 10px;
+    background-color: yellow;
+    /*float: left;*/
+}
